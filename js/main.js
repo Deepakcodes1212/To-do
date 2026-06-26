@@ -6,6 +6,7 @@ const state = {
     notes: loadNotes(),
     editIndex:null,
     selectedTag:"all",
-    sortOrder:"newest"
+    sortOrder:"newest",
+    filterStatus: "all"
 };
 setupEvents(state);

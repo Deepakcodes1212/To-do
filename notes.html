@@ -14,17 +14,23 @@
     </div>
     <div class="searchbar">
       <input type="text" placeholder="Search notes" id="Search">
-      
       <div id="suggestions"></div>
     </div>
-    <select  id="sortNotes">
+    
+    <select id="statusFilter">
+      <option value="all">All Tasks</option>
+      <option value="active">Active</option>
+      <option value="completed">Completed</option>
+    </select>
+
+    <select id="sortNotes">
       <option value="newest">Newest First</option>
       <option value="oldest">Oldest First</option>
     </select>
+
     <select id="tagFilter">
       <option value="all">All Tags</option>
     </select>
-    
     
     <div class="buttons">
       <button class="mode"></button>
@@ -33,10 +39,8 @@
     </div>
   </nav>
 
-    
     <section class="notes">
-        <!-- LEFT SIDE -->
-         <div class="left-side">
+        <div class="left-side">
             <div class="title1">
                 <input type="text" placeholder="Enter A title of your TO-DO" id="title">
             </div>
@@ -52,28 +56,24 @@
                 <button type="button" id="save-note-btn">Ai Summary</button>
             </div>
           </div>
-            <!-- RIGHT SIDE -->
-          <div class="right-side">
             
+        <div class="right-side">
             <div class="prev-note">
               <div class="pn1">
                 <h2 class="rs-h2">Previous Notes</h2>
                 <button type="button" class="newbtn">+ New</button>
               </div>
-              
               <div id="notes_container"></div>
             </div>
            
-           
             <div class="socials">
-              <div class="soc1"> <h2 class="rs1-h2">Read Socials</h2>
-                 <button type="button" class="newbtn">+ New</button></div>
+              <div class="soc1"> 
+                 <h2 class="rs1-h2">Read Socials</h2>
+                 <button type="button" class="newbtn">+ New</button>
+              </div>
               <div class="subsocials"></div>
             </div>
           </div>
-            
-            
-        
     </section>
     <script type="module" src="./js/main.js"></script>
 </body>
