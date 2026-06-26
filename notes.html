@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="notes.css">
+    <title>Document</title>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="/images/logo.png" alt="">
+      <h3>GukiiChess</h3>
+    </div>
+    <div class="searchbar">
+      <input type="text" placeholder="Search notes" id="Search">
+      
+      <div id="suggestions"></div>
+    </div>
+    <select  id="sortNotes">
+      <option value="newest">Newest First</option>
+      <option value="oldest">Oldest First</option>
+    </select>
+    <select id="tagFilter">
+      <option value="all">All Tags</option>
+    </select>
+    
+    
+    <div class="buttons">
+      <button class="mode"></button>
+      <button class="noti"></button>
+      <button class="acc"></button>
+    </div>
+  </nav>
+
+    
+    <section class="notes">
+        <!-- LEFT SIDE -->
+         <div class="left-side">
+            <div class="title1">
+                <input type="text" placeholder="Enter A title of your Notes" id="title">
+            </div>
+            <div class="thoughts">
+                <textarea name="" id="thoughts" placeholder="Write Your Chess Thoughts..."></textarea>
+            </div>
+            <div class="visibility">
+                <select name="visibility" id="visi1">
+                    <option selected>Private</option>
+                    <option>Public</option>
+                </select>
+                <button type="button" id="upload-btn">Save Note</button>
+                <button type="button" id="save-note-btn">Ai Summary</button>
+            </div>
+          </div>
+            <!-- RIGHT SIDE -->
+          <div class="right-side">
+            
+            <div class="prev-note">
+              <div class="pn1">
+                <h2 class="rs-h2">Previous Notes</h2>
+                <button type="button" class="newbtn">+ New</button>
+              </div>
+              
+              <div id="notes_container"></div>
+            </div>
+           
+           
+            <div class="socials">
+              <div class="soc1"> <h2 class="rs1-h2">Read Socials</h2>
+                 <button type="button" class="newbtn">+ New</button></div>
+              <div class="subsocials"></div>
+            </div>
+          </div>
+            
+            
+        
+    </section>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+/* notes page */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+
+}
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #8aa29e;
+    overflow-x: hidden;
+}
+/* Nav-Bar */
+
+
+nav{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 4rem;
+  max-width: 100%;
+  min-width: 100%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 1rem;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+.logo img{
+    height: 2.5rem;
+    cursor: pointer;
+}
+.logo h3{
+    cursor: pointer;
+}
+.searchbar{
+    display: flex;
+    flex: 1;
+    
+   
+}
+.searchbar input{
+    width: 100%;
+    max-width:30rem;
+    min-width: 10rem;
+    height: 3rem;
+    border-radius: 5px;
+    padding: 1rem;
+    height: 2.5rem;
+}
+.buttons button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0e68c; /* your yellow */
+    
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    height: 2.5rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    
+}
+.mode{
+    background-image: url(/images/notes/sun.png);
+    cursor: pointer;
+}
+.mode:hover{
+    transform: translate(0.3rem);
+}
+.noti{
+    background-image: url(/images/notes/clock.png);
+    cursor: pointer;
+}
+.noti:hover{
+    transform: translate(0.3rem);
+}
+.acc{
+    background-image: url(/images/notes/user\ \(1\).png);
+    cursor: pointer;
+}
+.acc:hover{
+    transform: translate(0.3rem);
+}
+/* Main Page */
+
+/* Left side */
+
+.notes{
+    margin-top: 1rem;;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.title1 input{
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+
+}
+
+.thoughts textarea{
+    width: 100%;
+    height: 30rem;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.visibility{
+    grid-column:1;
+    grid-row: 4;
+    display: flex;
+    gap: 1rem;
+    padding-left: 1rem;
+
+}
+.visibility select,button{
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: beige;
+    border: none;
+
+}
+#upload-btn{
+    cursor: pointer;
+}
+#save-note-btn{
+    cursor: pointer;
+    margin-left: auto;
+
+}
+
+/* Right sidee */
+.right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+.prev-note{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(175, 226, 175);
+    padding: 0px 1rem 1rem 1rem;
+    border-radius: 5px;
+    height: 17rem;
+    
+
+}
+.pn1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;   
+    margin: 8px 0;       
+    background-color: green;
+}
+
+.rs-h2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2rem;
+}
+
+#notes_container{
+    border-radius: 10px;
+    height:100%;
+    width: 100%;
+    background-color: #E3f2fd;
+    overflow-y: auto;
+    cursor: pointer;
+   
+}
+
+.note123{
+    padding: 0.1rem;
+    background-color: #fafafa;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(175, 226, 175);
+    padding: 0px 1rem 1rem 1rem;
+    border-radius: 5px;
+    height: 20rem;
+
+}
+.soc1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rs1-h2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    font-size: 2rem;
+    padding: 0px;
+    
+
+
+}
+.subsocials{
+    border-radius: 5px;
+    width:100% ;
+    height: 100%;
+    height: 20 rem;
+    background-color: #E3f2fd;
+}
+.deleteBtn{
+    background-color: red;
+    padding: 0.5rem;
+    cursor: pointer;
+
+}
+.pinBtn{
+    width: 50%;
+    display: inline;
+    transform: translate(0%,-100%);
+    cursor: pointer;
+}
+.editBtn{
+    width: 50%;
+    transform: translate(100%,0);
+    cursor: pointer;
+}
+
+#suggestions{
+    position:absolute;
+    background: white;
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 40px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10000000;
+}
+.suggestion-item{
+    padding:10px;
+    cursor:pointer;
+}
+.suggestion-item:hover{
+    background-color: #eee;
+}
+
+.feat1 a:hover{
+    background-color: green;
+}
+.nav-bar-lang option{
+    cursor: pointer;
+}
+.nav-bar-time{
+    cursor: pointer;
+}
